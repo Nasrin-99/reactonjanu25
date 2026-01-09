@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let [counter, nasrinCount] = useState(17)
+  let [counter, nasrinCount] = useState(10)
 
   // let counter = 15
   const addvalue = () => {
@@ -12,7 +12,11 @@ function App() {
     if(counter >=20){
       alert("its over baby stop");}
     else{
-    nasrinCount(counter + 1)}
+    nasrinCount(counter + 1)
+    // nasrinCount(counter => counter+1)
+    // nasrinCount(counter => counter+1)
+  
+  }
   }
   const removeValue = () => {
     if(counter <=0){
